@@ -267,7 +267,7 @@
               <v-list-item>
                 <template v-slot:prepend><v-icon color="indigo">mdi-pencil</v-icon></template>
                 <v-list-item-title class="text-black font-weight-medium">จงลบด้วยวิธี 2's Complement: (1011101)<sub>2</sub> - (0111011)<sub>2</sub></v-list-item-title>
-                 <v-list-item-subtitle class="text-caption">แบบฝึกหัดข้อ 6.</v-list-item-subtitle>
+                 <v-list-item-subtitle class="text-caption">แบบฝึกหัดข้อ 4.</v-list-item-subtitle>
               </v-list-item>
             </v-list>
           </v-card-text>
