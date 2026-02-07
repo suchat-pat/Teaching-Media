@@ -84,7 +84,7 @@ const quizUnits = ref([
     description: "ทดสอบเรื่องสมบัติจำนวนจริง, การแยกตัวประกอบ และอสมการ",
     icon: "mdi-math-compass",
     color: "blue",
-    link: "" // ใส่ลิงก์จริงตรงนี้
+    link: "https://wayground.com/join/pre-game/running/U2FsdGVkX1%252BDTJH4NEPl%252BT5gMi3PybQjG49cfphbMv1T2P%252B23xh%252FGQ%252FDsnX9fN8STP8NPcEG7UgPW%252BIIz882oQuDo3xcK7vhvkIUGD42SjQnjqlmdGJ7fm%252BM5G8FlnVBAW%252BZZ6tognpG0XCV9O1Q4Z3aJzWi0Px5lAwBSUGvYvk%253D/start" // ใส่ลิงก์จริงตรงนี้
   },
   {
     title: "ระบบเลขฐาน",
@@ -92,7 +92,7 @@ const quizUnits = ref([
     description: "ทดสอบการเปลี่ยนฐานเลข ฐานสอง ฐานแปด ฐานสิบ ฐานสิบหก",
     icon: "mdi-numeric",
     color: "teal",
-    link: ""
+    link: "https://wayground.com/join/pre-game/running/U2FsdGVkX19ff9mFGYgZf7j3ifBvLXX74SL9TPqx1I0GgfFZNGkQpAdLgMd2jCNwZg%252B9PeTgt4Cgjrb0Md6evdeluLVfx8UYHnTW5GgipoCMmvbc6i%252Bf0NpL7lKt8GTQEgSH9VJcEHhNXYSv6EW5mjEF93uKpdy9onsKqq8kj8Y%253D/start"
   },
   {
     title: "การคำนวณเลขฐาน",
@@ -100,7 +100,7 @@ const quizUnits = ref([
     description: "ทดสอบการบวก ลบ คูณ หาร และการใช้คอมพลีเมนต์",
     icon: "mdi-calculator",
     color: "cyan",
-    link: ""
+    link: "https://share.google/9iczfrXKPPnV4DVDz"
   },
   {
     title: "ตรรกศาสตร์",
@@ -108,7 +108,7 @@ const quizUnits = ref([
     description: "ทดสอบค่าความจริง, สัจนิรันดร์ และการอ้างเหตุผล",
     icon: "mdi-lightbulb-on",
     color: "purple",
-    link: ""
+    link: "https://share.google/Hs3Cs9HDWF0x5HtDu"
   },
   {
     title: "พีชคณิตบูลีน",
@@ -116,7 +116,7 @@ const quizUnits = ref([
     description: "ทดสอบกฎของบูลีน, การลดรูปวงจร และ Logic Gates",
     icon: "mdi-gate-and",
     color: "orange",
-    link: ""
+    link: "https://share.google/P9AdX5ATE3xcAgo5B"
   },
   {
     title: "เมทริกซ์",
@@ -124,7 +124,7 @@ const quizUnits = ref([
     description: "ทดสอบการคูณเมทริกซ์, ดีเทอร์มิแนนต์ (Det) และอินเวอร์ส",
     icon: "mdi-matrix",
     color: "deep-orange",
-    link: ""
+    link: "https://share.google/M69cFNdastUwNLXk5"
   }
 ]);
 </script>

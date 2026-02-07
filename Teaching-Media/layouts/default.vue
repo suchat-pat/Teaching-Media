@@ -7,7 +7,7 @@
         </v-app-bar>
 
         <ClientOnly>
-            <v-navigation-drawer v-model="drawer" color="#555555" app :temporary="isMobile" :permanent="!isMobile">
+            <v-navigation-drawer v-model="drawer" width="260" color="#e6e6e6" app :temporary="isMobile" :permanent="!isMobile">
                 <v-list density="compact">
                     <template v-for="item in roles" :key="item.title">
                         
@@ -91,11 +91,19 @@ const roles: RoleItem[] = [
 </script>
 
 <style scoped>
-/* ปรับแต่งสี Text ใน Drawer หากต้องการ */
+/* 1. นำเข้าฟอนต์ Prompt จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap');
+
+/* 2. ปรับแต่งตัวหนังสือในเมนู */
 :deep(.v-list-item-title) {
-    color: white; /* หรือสีที่คุณต้องการ */
+    font-family: 'Prompt', sans-serif !important; /* เปลี่ยนฟอนต์ที่นี่ */
+    color: black !important; /* สีดำตามที่ขอ */
+    font-size: 16px !important; /* เพิ่มขนาดนิดหน่อยให้ดูเต็มตาสวยขึ้น */
+    letter-spacing: 0.5px; /* ระยะห่างตัวอักษรนิดนึงเพื่อให้ดูโปร่ง */
 }
-:sdeep(.v-list-item-title) {
-    color: rgb(26, 26, 128); /* หรือสีที่คุณต้องการ */
+
+/* แถม: ปรับฟอนต์ตรงหัวข้อใหญ่ด้านบนด้วยก็ได้ครับ */
+.v-toolbar-title {
+    font-family: 'Prompt', sans-serif !important;
 }
 </style>

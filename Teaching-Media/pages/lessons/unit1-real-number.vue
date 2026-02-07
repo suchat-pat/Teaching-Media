@@ -197,83 +197,100 @@
         </v-card>
 
         <v-card class="mb-6" variant="outlined">
-          <v-card-item title="7. แบบฝึกหัดทบทวน: ระบบตัวเลขฐาน (Number Systems Review)">
+          <v-card-item title="7. พื้นฐานระบบเลขโรมัน">
             <template v-slot:prepend>
-              <v-icon color="primary">mdi-pencil-box-multiple</v-icon>
-            </template>
-            <template v-slot:append>
-               <v-chip size="small" color="primary" label>ชุดที่ 4</v-chip>
+              <v-icon color="indigo">mdi-book-open-variant</v-icon>
             </template>
           </v-card-item>
           <v-divider></v-divider>
           <v-card-text>
+            <p class="mb-4">ชาวโรมันนำตัวหนังสือกรีกมาดัดแปลงเป็นตัวเลขโรมันเมื่อประมาณ 300 - 100 ปีก่อนคริสต์ศักราช โดยใช้สัญลักษณ์พื้นฐาน 7 ตัว</p>
+            
+            <v-table density="compact" class="border rounded-lg mb-4">
+              <thead>
+                <tr class="bg-indigo-lighten-5">
+                  <th class="text-center font-weight-bold">ตัวเลขโรมัน</th>
+                  <th v-for="sym in ['I', 'V', 'X', 'L', 'C', 'D', 'M']" :key="sym" class="text-center">{{ sym }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center font-weight-bold bg-grey-lighten-4">ตัวเลขฮินดูอาราบิก</td>
+                  <td v-for="val in [1, 5, 10, 50, 100, 500, 1000]" :key="val" class="text-center">{{ val }}</td>
+                </tr>
+              </tbody>
+            </v-table>
+
+            <v-alert type="info" variant="tonal" border="start" class="mb-4">
+              <strong>หลักการเขียนที่สำคัญ:</strong> สัญลักษณ์แต่ละตัวเขียนติดกันได้ไม่เกิน 3 ตัว และการเขียนจำนวนที่มีค่ามากให้ใช้เครื่องหมายขีด (-) บนสัญลักษณ์เพื่อให้มีค่าเป็น 1,000 เท่า
+            </v-alert>
+          </v-card-text>
+        </v-card>
+
+        <v-row class="mb-6">
+          <v-col cols="12" md="6">
+            <v-card variant="tonal" color="green-lighten-4" class="pa-3 h-100">
+              <div class="text-subtitle-1 font-weight-bold text-green-darken-3 mb-2">หลักการเพิ่ม (Addition)</div>
+              <p class="text-body-2 mb-2">เขียนสัญลักษณ์เรียงกันไปจากค่ามากไปหาน้อย</p>
+              <ul class="pl-4 text-body-2">
+                <li>III = 1+1+1 = 3$</li>
+                <li>XXII = 10+10+1+1 = 22$</li>
+                <li>DCCLXXVII = 500+100+100+50+10+10+5+1+1 = 777$</li>
+              </ul>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" md="6">
+            <v-card variant="tonal" color="red-lighten-4" class="pa-3 h-100">
+              <div class="text-subtitle-1 font-weight-bold text-red-darken-3 mb-2">หลักการลด (Subtraction)</div>
+              <p class="text-body-2 mb-2">เขียนตัวเลขที่มีค่าน้อยไว้หน้าตัวเลขที่มีค่ามาก</p>
+              <ul class="pl-4 text-body-2">
+                <li>IV = 5-1 = 4</li>
+                <li>IX = 10-1 = 9</li>
+                <li>XL = 50-10 = 40</li>
+                <li>CD = 500-100 = 400</li>
+              </ul>
+              <div class="text-caption mt-2 text-red-darken-4">* ตัวเลขลบมีเพียง I, X, C เท่านั้น</div>
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <v-card class="mb-6" variant="outlined">
+          <v-card-item title="8. แบบฝึกหัดทบทวน (Exercises)">
+            <template v-slot:prepend>
+              <v-icon color="indigo">mdi-clipboard-list-outline</v-icon>
+            </template>
+          </v-card-item>
+          <v-divider></v-divider>
+          <v-card-text>
+            <div class="text-subtitle-1 font-weight-bold mb-3">จงเติมคำตอบให้ถูกต้อง:</div>
+            
             <v-row>
               <v-col cols="12" md="6">
-                <v-card variant="tonal" class="h-100">
-                  <v-card-title class="text-subtitle-1 font-weight-bold bg-primary text-white">
-                    A. จงเขียนเป็นเลขฐานสิบ
-                  </v-card-title>
-                  <v-table density="compact">
-                    <thead>
-                      <tr>
-                        <th class="text-left" width="50">ข้อ</th>
-                        <th class="text-left">โจทย์</th>
-                        <th class="text-left text-grey">คำตอบ (พื้นที่ว่าง)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>1</td><td>11110<sub>2</sub></td><td>...................................</td></tr>
-                      <tr><td>2</td><td>0000<sub>2</sub></td><td>...................................</td></tr>
-                      <tr><td>3</td><td>22110<sub>3</sub></td><td>...................................</td></tr>
-                      <tr><td>4</td><td>30010<sub>4</sub></td><td>...................................</td></tr>
-                      <tr><td>5</td><td>11100<sub>2</sub></td><td>...................................</td></tr>
-                      <tr><td>6</td><td>122<sub>3</sub></td><td>...................................</td></tr>
-                      <tr><td>7</td><td>11200<sub>3</sub></td><td>...................................</td></tr>
-                      <tr><td>8</td><td>11010<sub>2</sub></td><td>...................................</td></tr>
-                      <tr><td>9</td><td>000<sub>2</sub></td><td>...................................</td></tr>
-                    </tbody>
-                  </v-table>
-                </v-card>
+                <v-list density="compact">
+                  <v-list-subheader>เขียนเลขฮินดูอาราบิกเป็นเลขโรมัน</v-list-subheader>
+                  <v-list-item v-for="(q, i) in ['238', '953', '5,738', '34,639']" :key="i">
+                    <template v-slot:prepend><v-icon size="small">mdi-pencil</v-icon></template>
+                    <v-list-item-title class="text-blue">{{ i+1 }}. เปลี่ยน {{ q }} เป็นเลขโรมัน</v-list-item-title>
+                  </v-list-item>
+                </v-list>
               </v-col>
 
               <v-col cols="12" md="6">
-                <v-card variant="tonal" class="h-100">
-                  <v-card-title class="text-subtitle-1 font-weight-bold bg-teal-darken-1 text-white">
-                    B. จงเขียนเป็นเลขฐานต่างๆ
-                  </v-card-title>
-                  <v-table density="compact">
-                    <thead>
-                      <tr>
-                        <th class="text-left" width="50">ข้อ</th>
-                        <th class="text-left">โจทย์ (ฐานสิบ)</th>
-                        <th class="text-left text-grey">เป้าหมาย</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>1</td><td>34</td><td>เป็น ฐาน 5</td></tr>
-                      <tr><td>2</td><td>73</td><td>เป็น ฐาน 4</td></tr>
-                      <tr><td>3</td><td>82</td><td>เป็น ฐาน 6</td></tr>
-                      <tr><td>4</td><td>97</td><td>เป็น ฐาน 8</td></tr>
-                      <tr><td>5</td><td>131</td><td>เป็น ฐาน 7</td></tr>
-                      <tr><td>6</td><td>147</td><td>เป็น ฐาน 8</td></tr>
-                      <tr><td>7</td><td>250</td><td>เป็น ฐาน 9</td></tr>
-                      <tr><td>8</td><td>347</td><td>เป็น ฐาน 12</td></tr>
-                      <tr><td>9</td><td>467</td><td>เป็น ฐาน 11</td></tr>
-                    </tbody>
-                  </v-table>
-                </v-card>
+                <v-list density="compact">
+                  <v-list-subheader>เขียนเลขโรมันเป็นเลขฮินดูอาราบิก</v-list-subheader>
+                  <v-list-item v-for="(q, i) in ['MMDXLVII', 'VMDXCIX', 'XDCXCI', 'CDXXVDCL']" :key="i">
+                    <template v-slot:prepend><v-icon size="small">mdi-pencil</v-icon></template>
+                    <v-list-item-title class="text-blue">{{ i+5 }}. เปลี่ยน {{ q }} เป็นเลขฐานสิบ</v-list-item-title>
+                  </v-list-item>
+                </v-list>
               </v-col>
             </v-row>
-            
-            <div class="mt-4 text-caption text-grey text-center">
-              <v-icon icon="mdi-lightbulb-on-outline" size="small" class="mr-1"></v-icon>
-              Tips: การแปลงฐาน 10 ให้ใช้วิธีหารสั้นเอาเศษ ส่วนการแปลงเป็นฐาน 10 ให้ใช้การกระจายค่าประจำหลัก
-            </div>
           </v-card-text>
         </v-card>
 
         <v-card class="mb-6" variant="outlined">
-          <v-card-item title="8. ศึกษาเพิ่มเติม (Further Study)">
+          <v-card-item title="9. ศึกษาเพิ่มเติม (Further Study)">
             <template v-slot:prepend>
               <v-icon color="cyan-darken-2">mdi-book-education-outline</v-icon>
             </template>
@@ -293,7 +310,19 @@
               elevation="2"
               class="mb-4"
             >
-              เปิดดูเอกสารประกอบ (PDF)
+              เปิดดูเอกสารประกอบ(จำนวนจริง) (PDF)
+            </v-btn>
+            &nbsp;&nbsp;
+            <v-btn 
+              href="/lessons/คณิตศาสตร์คอมฯ_01.pdf" 
+              target="_blank"
+              color="red-darken-1" 
+              size="large" 
+              prepend-icon="mdi-file-pdf-box"
+              elevation="2"
+              class="mb-4"
+            >
+              เปิดดูเอกสารประกอบ(เลขโรมัน) (PDF)
             </v-btn>
             <br>
             <v-btn 
