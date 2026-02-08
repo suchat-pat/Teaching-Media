@@ -87,6 +87,9 @@ const roles: RoleItem[] = [
     
     // Quiz
     { title: 'แบบทดสอบ', to: '/Quiz' },
+    
+    // Creators
+    { title: 'ผู้จัดทำ', to: '/creators' },
 ]
 </script>
 

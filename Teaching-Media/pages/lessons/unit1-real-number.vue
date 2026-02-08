@@ -335,6 +335,16 @@
             >
               แบบทดสอบเพิ่มเติม (PDF)
             </v-btn>
+            <br><br>
+            <v-btn 
+              href="https://youtu.be/6_heJQ7nsrQ?si=gES5_2n__fHOkdQG" 
+              target="_blank"
+              color="red-darken-4" 
+              size="large" 
+              elevation="2"
+            >
+              ศึกษาเพิ่มเติมจากคลิปวิดีโอ
+            </v-btn>
 
           </v-card-text>
         </v-card>

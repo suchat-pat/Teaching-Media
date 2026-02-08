@@ -242,7 +242,16 @@
             >
               แบบทดสอบเพิ่มเติม (PDF)
             </v-btn>
-
+            <br><br>
+            <v-btn 
+              href="https://www.youtube.com/live/qVt_fdsvHqw?si=76NuFB7CoANGCF42" 
+              target="_blank"
+              color="red-darken-4" 
+              size="large" 
+              elevation="2"
+            >
+              ศึกษาเพิ่มเติมจากคลิปวิดีโอ
+            </v-btn>
           </v-card-text>
         </v-card>
 
