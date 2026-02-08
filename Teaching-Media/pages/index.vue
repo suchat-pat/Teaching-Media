@@ -8,7 +8,7 @@
           elevation="10"
         >
           <v-img
-            src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2070&auto=format&fit=crop"
+            src="/img/Computer.png"
             height="350"
             cover
             class="hero-image-zoom"
