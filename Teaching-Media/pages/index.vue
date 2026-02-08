@@ -260,10 +260,6 @@ const gradingScale = ref([
 </script>
 
 <style scoped>
-/* 1. Global Background & Text */
-.bg-tech {
-  background: radial-gradient(circle at 10% 20%, rgb(242, 246, 252) 0%, rgb(227, 237, 247) 90%);
-}
 .leading-relaxed { line-height: 1.8 !important; }
 .highlight-text {
   color: #00838F; /* Cyan darken 3 */
