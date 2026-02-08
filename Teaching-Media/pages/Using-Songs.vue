@@ -207,4 +207,14 @@ const songs = ref([
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.12) !important;
 }
+
+/* เพิ่ม Effect ให้การ์ดเด้งขึ้นเล็กน้อยเมื่อเอาเมาส์ไปวาง */
+.v-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.v-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
 </style>
