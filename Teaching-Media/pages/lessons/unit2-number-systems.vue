@@ -112,7 +112,7 @@
             <p class="mb-4">
               ใช้หลักการคูณเลขโดดด้วย <strong>ค่าประจำหลัก</strong> (Base<sup>n</sup>) แล้วนำมาบวกกัน
             </p>
-            <v-alert border="start" color="teal-lighten-4" variant="tonal" class="mb-4">
+            <v-alert border="start" color="teal-lighten-4" variant="tonal" class="mb-4 text-teal-darken-3">
               <strong>ตัวอย่าง:</strong> แปลง (10010)<sub>2</sub> เป็นฐานสิบ<br>
               <strong>วิธีทำ:</strong> (1 &times; 2<sup>5</sup>) + (1 &times; 2<sup>4</sup>) + (0 &times; 2<sup>3</sup>) + (0 &times; 2<sup>2</sup>) + (1 &times; 2<sup>1</sup>) + (0 &times; 2<sup>0</sup>) <br>
               = 32 + 16 + 0 + 0 + 2 + 0<br>

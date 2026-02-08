@@ -231,11 +231,11 @@
           <v-col cols="12" md="6">
             <v-card variant="tonal" color="green-lighten-4" class="pa-3 h-100">
               <div class="text-subtitle-1 font-weight-bold text-green-darken-3 mb-2">หลักการเพิ่ม (Addition)</div>
-              <p class="text-body-2 mb-2">เขียนสัญลักษณ์เรียงกันไปจากค่ามากไปหาน้อย</p>
+              <p class="text-body-2 mb-2 text-green-darken-3">เขียนสัญลักษณ์เรียงกันไปจากค่ามากไปหาน้อย</p>
               <ul class="pl-4 text-body-2">
-                <li>III = 1+1+1 = 3$</li>
-                <li>XXII = 10+10+1+1 = 22$</li>
-                <li>DCCLXXVII = 500+100+100+50+10+10+5+1+1 = 777$</li>
+                <li class="text-green-darken-3">III = 1+1+1 = 3$</li>
+                <li class="text-green-darken-3">XXII = 10+10+1+1 = 22$</li>
+                <li class="text-green-darken-3">DCCLXXVII = 500+100+100+50+10+10+5+1+1 = 777$</li>
               </ul>
             </v-card>
           </v-col>
@@ -243,12 +243,12 @@
           <v-col cols="12" md="6">
             <v-card variant="tonal" color="red-lighten-4" class="pa-3 h-100">
               <div class="text-subtitle-1 font-weight-bold text-red-darken-3 mb-2">หลักการลด (Subtraction)</div>
-              <p class="text-body-2 mb-2">เขียนตัวเลขที่มีค่าน้อยไว้หน้าตัวเลขที่มีค่ามาก</p>
+              <p class="text-body-2 mb-2 text-red-darken-3">เขียนตัวเลขที่มีค่าน้อยไว้หน้าตัวเลขที่มีค่ามาก</p>
               <ul class="pl-4 text-body-2">
-                <li>IV = 5-1 = 4</li>
-                <li>IX = 10-1 = 9</li>
-                <li>XL = 50-10 = 40</li>
-                <li>CD = 500-100 = 400</li>
+                <li class="text-red-darken-3">IV = 5-1 = 4</li>
+                <li class="text-red-darken-3">IX = 10-1 = 9</li>
+                <li class="text-red-darken-3">XL = 50-10 = 40</li>
+                <li class="text-red-darken-3">CD = 500-100 = 400</li>
               </ul>
               <div class="text-caption mt-2 text-red-darken-4">* ตัวเลขลบมีเพียง I, X, C เท่านั้น</div>
             </v-card>

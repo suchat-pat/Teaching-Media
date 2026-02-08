@@ -26,18 +26,18 @@
             <v-row>
               <v-col cols="12" md="6">
                 <v-card variant="tonal" color="indigo-lighten-4" class="pa-3 mb-3 h-100">
-                  <div class="text-subtitle-1 font-weight-bold text-indigo-darken-3 mb-2">กฏการบวก (Addition)</div>
+                  <div class="text-subtitle-1 font-weight-bold text-indigo-darken-1 mb-2">กฏการบวก (Addition)</div>
                   <ul class="pl-4">
-                    <li>0 + 0 = 0</li>
-                    <li>0 + 1 = 1</li>
-                    <li>1 + 0 = 1</li>
-                    <li>1 + 1 = 0 (ทด 1)</li>
-                    <li>1 + 1 + 1 = 1 (ทด 1)</li>
+                    <li class="text-indigo-darken-1">0 + 0 = 0</li>
+                    <li class="text-indigo-darken-1">0 + 1 = 1</li>
+                    <li class="text-indigo-darken-1">1 + 0 = 1</li>
+                    <li class="text-indigo-darken-1">1 + 1 = 0 (ทด 1)</li>
+                    <li class="text-indigo-darken-1">1 + 1 + 1 = 1 (ทด 1)</li>
                   </ul>
                   
                   <v-divider class="my-3"></v-divider>
                   
-                  <div class="text-subtitle-2 font-weight-bold mb-1">ตัวอย่าง: (1100)<sub>2</sub> + (1010)<sub>2</sub></div>
+                  <div class="text-subtitle-2 font-weight-bold mb-1 text-indigo-darken-1">ตัวอย่าง: (1100)<sub>2</sub> + (1010)<sub>2</sub></div>
                   <div class="bg-white rounded pa-2 border" style="width: fit-content;">
                     <pre class="text-body-1 font-mono mb-0 text-black">
   1100
@@ -46,7 +46,7 @@
  10110
 </pre>
                   </div>
-                  <div class="mt-2"><strong>ตอบ:</strong> (10110)<sub>2</sub></div>
+                  <div class="mt-2 text-indigo-darken-1"><strong>ตอบ:</strong> (10110)<sub>2</sub></div>
                 </v-card>
               </v-col>
 
@@ -54,15 +54,15 @@
                 <v-card variant="tonal" color="red-lighten-4" class="pa-3 mb-3 h-100">
                   <div class="text-subtitle-1 font-weight-bold text-red-darken-3 mb-2">กฏการลบ (Subtraction)</div>
                   <ul class="pl-4">
-                    <li>0 - 0 = 0</li>
-                    <li>1 - 0 = 1</li>
-                    <li>1 - 1 = 0</li>
-                    <li>0 - 1 = 1 (ยืมหลักหน้ามา 1 แล้วค่าหลักเดิมเหลือ 0, ค่าที่ยืมมาจะเป็น 2 ในฐานสิบ)</li>
+                    <li class="text-red-darken-3">0 - 0 = 0</li>
+                    <li class="text-red-darken-3">1 - 0 = 1</li>
+                    <li class="text-red-darken-3">1 - 1 = 0</li>
+                    <li class="text-red-darken-3">0 - 1 = 1 (ยืมหลักหน้ามา 1 แล้วค่าหลักเดิมเหลือ 0, ค่าที่ยืมมาจะเป็น 2 ในฐานสิบ)</li>
                   </ul>
 
                   <v-divider class="my-3"></v-divider>
 
-                  <div class="text-subtitle-2 font-weight-bold mb-1">ตัวอย่าง: (1100)<sub>2</sub> - (1010)<sub>2</sub></div>
+                  <div class="text-subtitle-2 font-weight-bold mb-1 text-red-darken-3">ตัวอย่าง: (1100)<sub>2</sub> - (1010)<sub>2</sub></div>
                   <div class="bg-white rounded pa-2 border" style="width: fit-content;">
                     <pre class="text-body-1 font-mono mb-0 text-black">
   1100
@@ -71,16 +71,16 @@
   0010
 </pre>
                   </div>
-                  <div class="mt-2"><strong>ตอบ:</strong> (10)<sub>2</sub></div>
+                  <div class="mt-2 text-red-darken-3"><strong>ตอบ:</strong> (10)<sub>2</sub></div>
                 </v-card>
               </v-col>
 
               <v-col cols="12" md="6">
                 <v-card variant="tonal" color="green-lighten-4" class="pa-3 mb-3 h-100">
                   <div class="text-subtitle-1 font-weight-bold text-green-darken-3 mb-2">การคูณ (Multiplication)</div>
-                  <p class="mb-2">เหมือนเลขฐานสิบ: 1 &times; 1 = 1, นอกนั้นได้ 0</p>
+                  <p class="mb-2 text-green-darken-3">เหมือนเลขฐานสิบ: 1 &times; 1 = 1, นอกนั้นได้ 0</p>
                   
-                  <div class="text-subtitle-2 font-weight-bold mb-1">ตัวอย่าง: (1100)<sub>2</sub> &times; (101)<sub>2</sub></div>
+                  <div class="text-subtitle-2 font-weight-bold mb-1 text-green-darken-3">ตัวอย่าง: (1100)<sub>2</sub> &times; (101)<sub>2</sub></div>
                   <div class="bg-white rounded pa-2 border" style="width: fit-content;">
                     <pre class="text-body-1 font-mono mb-0 text-black">
     1100
@@ -93,16 +93,16 @@
   111100
 </pre>
                   </div>
-                  <div class="mt-2"><strong>ตอบ:</strong> (111100)<sub>2</sub></div>
+                  <div class="mt-2 text-green-darken-3"><strong>ตอบ:</strong> (111100)<sub>2</sub></div>
                 </v-card>
               </v-col>
 
                <v-col cols="12" md="6">
                 <v-card variant="tonal" color="orange-lighten-4" class="pa-3 mb-3 h-100">
                   <div class="text-subtitle-1 font-weight-bold text-orange-darken-3 mb-2">การหาร (Division)</div>
-                  <p class="mb-2">ใช้วิธีหารยาวเหมือนเลขฐานสิบ</p>
+                  <p class="mb-2 text-orange-darken-3">ใช้วิธีหารยาวเหมือนเลขฐานสิบ</p>
                   
-                  <div class="text-subtitle-2 font-weight-bold mb-1">ตัวอย่าง: (1111)<sub>2</sub> &divide; (101)<sub>2</sub></div>
+                  <div class="text-subtitle-2 font-weight-bold mb-1 text-orange-darken-3">ตัวอย่าง: (1111)<sub>2</sub> &divide; (101)<sub>2</sub></div>
                   <div class="bg-white rounded pa-2 border" style="width: fit-content;">
                     <pre class="text-body-1 font-mono mb-0 text-black">
       11
@@ -116,7 +116,7 @@
        0
 </pre>
                   </div>
-                  <div class="mt-2"><strong>ตอบ:</strong> (11)<sub>2</sub></div>
+                  <div class="mt-2 text-orange-darken-3"><strong>ตอบ:</strong> (11)<sub>2</sub></div>
                 </v-card>
               </v-col>
             </v-row>
@@ -138,7 +138,7 @@
               <v-col cols="12" md="6">
                 <div class="text-h6 text-indigo-darken-1 mb-2">การบวก (Addition)</div>
                 <p>ตัวอย่าง: (4356)<sub>8</sub> + (5726)<sub>8</sub></p>
-                <ul class="text-body-2 text-grey-darken-3 mb-2">
+                <ul class="text-body-2 text-grey-darken-3 mb-2 pl-4">
                   <li>6+6=12 (เกิน 8) &rightarrow; 12-8=4 ทด 1</li>
                   <li>5+2+1(ทด)=8 &rightarrow; 8-8=0 ทด 1</li>
                   <li>3+7+1(ทด)=11 &rightarrow; 11-8=3 ทด 1</li>
@@ -149,7 +149,7 @@
               <v-col cols="12" md="6">
                 <div class="text-h6 text-indigo-darken-1 mb-2">การลบ (Subtraction)</div>
                 <p>ตัวอย่าง: (12304)<sub>8</sub> - (5726)<sub>8</sub></p>
-                <ul class="text-body-2 text-grey-darken-3 mb-2">
+                <ul class="text-body-2 text-grey-darken-3 mb-2 pl-4">
                   <li>4-6 ไม่ได้ ยืมหลักหน้ามา 8 เป็น 12-6=6</li>
                   <li>หลักถัดไปถูกยืมเหลือ 0 (เดิมคือ 0 ยืมต่อเป็น 8 ถูกยืมไป 1 เหลือ 7)</li>
                   <li>...ทำต่อตามหลักการยืม...</li>
@@ -175,7 +175,7 @@
               <v-col cols="12" md="6">
                 <div class="text-h6 text-indigo-darken-1 mb-2">การบวก (Addition)</div>
                 <p>ตัวอย่าง: (A3C6)<sub>16</sub> + (2EC6)<sub>16</sub></p>
-                <ul class="text-body-2 text-grey-darken-3">
+                <ul class="text-body-2 text-grey-darken-3 pl-4">
                   <li>6+6 = 12 (C)</li>
                   <li>C(12) + C(12) = 24. เกิน 16 &rightarrow; 24-16 = 8 (ทด 1)</li>
                   <li>3 + E(14) + 1(ทด) = 18. เกิน 16 &rightarrow; 18-16 = 2 (ทด 1)</li>
